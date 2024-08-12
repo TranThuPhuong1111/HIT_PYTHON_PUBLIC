@@ -1,5 +1,11 @@
-s = int(input())
+chuoi = input("Nhập một chuỗi: ")
 
-def buocdem(s):
-    return s // 3 + (bool)(s % 3)
-print(buocdem(s))
+dem = {}
+
+for ky_tu in chuoi:
+    if ky_tu in dem:
+        dem[ky_tu] += 1
+    else:
+        dem[ky_tu] = 1
+
+print(dem)
